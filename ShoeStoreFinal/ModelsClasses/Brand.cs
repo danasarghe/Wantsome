@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ModelsClasses
+{
+    public class Brand
+    {
+        [Key]
+        public int Brandid { get; set; }
+
+        public string Name { get; set; }
+    }
+}
