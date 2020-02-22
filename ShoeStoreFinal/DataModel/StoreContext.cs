@@ -9,7 +9,7 @@ namespace DataModel
         public StoreContext() : base("StoreDbConnexionString")
         {
             Database.SetInitializer<StoreContext>(new DropCreateDatabaseAlways<StoreContext>());
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreContext, DataModel.Migrations.Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreContext, DataModel.Migrations.Configuration>());
 
         }
 
