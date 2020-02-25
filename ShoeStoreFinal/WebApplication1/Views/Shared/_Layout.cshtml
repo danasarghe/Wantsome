@@ -11,7 +11,6 @@
 <body>
     <style>
         body {
-            
             background-image: url('Content/Images/red-sneakers.jpg');
             background-color: lavenderblush;
             background-position: center;
@@ -19,7 +18,8 @@
             background-size: cover;
         }
     </style>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    
+        <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +35,8 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("StoreManager", "Index", "StoreManager")</li>
-              
+                    <li>@Html.ActionLink("Brands", "Index", "Brands")</li>
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -46,8 +47,12 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Shoe Store</p>
+            <span class="badge badge-pill badge-primary">Blog</span>
+            <span class="badge badge-pill badge-secondary">Facebook</span>
+            <span class="badge badge-pill badge-success">Twitter</span>
         </footer>
     </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
